@@ -7,6 +7,11 @@ const aiResponse = document.getElementById('aiResponse');
 const form = document.getElementById('form');
 
 const enviarFormulario = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
+    const apiKey = apiKeyInput.value;
+    const game = gameSelect.value;
+    const question = questionInput.value;
+
+    console.log(apiKey, game, question);
 }
 form.addEventListener('submit', enviarFormulario)
