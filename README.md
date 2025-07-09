@@ -1,124 +1,24 @@
-# HTML
-- HyperText
-    - Texto puro, livros, revistas, jornais
-    - Links: acessar outros documentos
-    - Imagens, vídeos, áudios
-- Markup
-    - Marcação
-    - Tags: <a> Link <a>
-    - Atributos: <a href ="https://rocketseat.com.br">
-    - Globais: id, class, etc.
-- Language
-    - Linguagem
-    - Sintaxe: maneira de escrever
+# Sobre o projeto
 
-# HTTP
-- HyperText
-- Transfer
-    - Transferência
-- Protocol
- - Protocolo
- - Conjunto de regras
- - Methods HTTP (verbos): Get, Post, Patch/Put, Delete
- - Headers (cabeçalhos): Instruções/Informações extras para cada chamada
+Projeto desenvolvido durante a NLW 20, na trilha iniciante, organizado e orientado pela Rocketseat. Projeto busca o desenvolvimento de um assistente para jogos elêtronicos (League of Legends, Dota 2, Valorant, CS2 etc.) que utiliza integração com o modelo de IA Gemini para obtenção de dicas, estratégias e builds para o jogo referido.
 
-# URL
-- Uniform
-    - Uniforme
-- Resource
-    - Recurso
-- Locator
-    - Localizador
-Encontrar um recurso(html, css, js, pdf, png, mp4, mp3, etc.)
-Endereço
+# Como utilizar
 
-# IP
-- Internet
-    - Rede mundial de computadores
-- Protocol
-    - Conjunto de regras
-Endereço do computador
-rocketseat.com.br (domínio)
-123.32.1.23 (ip)
+O projeto roda no browser selecionado (Google, Microsoft Edge, Opera etc.)
+Para a obteção da API Key, deve-se acessar o site da API do Gemini e criar a sua própria chave, depois basta apenas preencher os campos e fazer sua pergunta que o assitente irá responder sem demora.
 
-# DNS
-- Domain
-    - Domínio
-- Name
-    - Nome
-- Server
-    - Servidor
+# Jogos que o assistente engloba
 
-# CSS
-- Cascading
-    - Cascata
-    - Regra de escritas
-    - Hierarquia
-    - Especificidade
-- Style
-    - Estilo
-- Sheet
-    - Folha
+- League of Legends
+- Valorant
+- CS2
 
-De um arquivo que terá na sua sintaxe, declarações, propriedades e valores.
-A partir disso, o HTML é impactado visualmente.
+Futuras atualizações virão para trazer suporte aos demais jogos, inserindo também jogos fora do escopo competitivo.
 
-- declaração
-- seletor
-- propriedade e valor
+# Tecnologias utilizadas
 
-# JS
-- Linguagem de Programação
-- Browsers
-- Entrada de dado-> Processamento -> Saída de dado
-- Variáveis
-- Função
-    - Agrupamento
-    - Sequência lógica
-    - Saída
-- Gemini (IA): esperar uma resposta
-- Mexer no meu navegador
-- Estrutura de dados
-- Estrutura de decisão
-- Algoritmo: Sequência de passos lógica, de maneira ordenada, a fim de chegar a alguma conclusão (limitada)
-- Lógica (Pensamento computacional)
-    - Abstração
-    - Decomposição
-    - Algoritmo
-    - Reconhecimento de padrões
-- Tipos de dados
-    - Number (números)
-    - String (textos) (" ", ' ', ` `)
-    - Boolean: true | false
-    - Object
-
-# DOM
-- Document
-- Object
-- Model
-
-# API
-- Application
-- Programming
-- Interface
-- JSON: JavaScript Object Notation
-
-# CDN
-- Content
-- Delivery
-- Network
-
-# LLM
-- Large
-- Language
-- Model
-- Gemini, OpenAI (chatGPT), Anthropic (Claude) etc.
-
-# Agentes de IA
-- Tools (ferramentas): permitem uso de código, ou apps, ou qualquer informação extra
-- Melhor contexto
-
-# Engenharia de Prompt
-- One shot: uma única pergunta sem muito contexto
-- Few shot: é apresentado exemplos do que se espera
-- Chain of Tought: Cadeia de pensamento para a IA responder gradativamente conforme a instrução.
+- HTML
+- CSS
+- JavaScript
+- Gemini API
+- Engenharia de Prompt
