@@ -1,6 +1,6 @@
 # Sobre o projeto
 
-Projeto desenvolvido durante a NLW 20, na trilha iniciante, organizado e orientado pela Rocketseat. Projeto busca o desenvolvimento de um assistente para jogos elêtronicos (League of Legends, Dota 2, Valorant, CS2 etc.) que utiliza integração com o modelo de IA Gemini para obtenção de dicas, estratégias e builds para o jogo referido.
+Projeto desenvolvido durante a NLW 20, na trilha iniciante, organizado e orientado pela Rocketseat em conjunto pelo instrutor e dev Mayk Brito. Projeto busca o desenvolvimento de um assistente para jogos elêtronicos (League of Legends, Dota 2, Valorant, CS2 etc.) que utiliza integração com o modelo de IA Gemini para obtenção de dicas, estratégias e builds para o jogo referido.
 
 # Como utilizar
 
