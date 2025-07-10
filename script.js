@@ -14,7 +14,8 @@ const markdownToHTML = (text) => {
 const perguntarIA = async (question, game, apiKey) => {
     const model = "gemini-2.5-flash";
     const geminiURL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
-    const pergunta = `
+
+    const perguntaLOL = `
         ## Especialidade
         Você é um especialista de meta para o jogo ${game}.
 
@@ -31,7 +32,7 @@ const perguntarIA = async (question, game, apiKey) => {
         ## Resposta
         - Economize na resposta, seja direto e responda no máximo 500 caracteres.
         - Responda em markdown.
-        - Não precisa fazer nenhuma saudação ou despedida, apenas responda o que o usuário    está querendo.
+        - Não precisa fazer nenhuma saudação ou despedida, apenas responda o que o usuário está querendo.
 
         ## Exemplo de resposta
         pergunta do usuário: "Qual a melhor build para rengar na jungle?"
@@ -40,6 +41,42 @@ const perguntarIA = async (question, game, apiKey) => {
         ---
         Aqui está a pergunta do usuário: ${question}
     `
+    const perguntaValorant = `
+        ## Especialidade
+        Você é um especialista de meta para o jogo ${game}.
+
+        ## Tarefa
+        Você deve responder as perguntas do usuário com base no seu conhecimento do jogo, estratégias e dicas.
+
+        ## Regras
+        - Se você não sabe a resposta, responda com "Não sei" e não tenta inventar uma resposta.
+        - Se a pergunta não está relacionada ao jogo, responda com "Essa pergunta não está relacionada ao jogo".
+        - Considere a data atual ${new Date().toLocaleDateString()}
+        - Faça pesquisas atualizadas sobre o patch atual, baseado na data atual, para dar uma resposta coerente.
+        - Nunca responda agentes, armas ou cargas de habilidade que você não tenha certeza de que existe no patch atual.
+        - Sempre forneça a resposta em português.
+
+        ## Resposta
+        - Economize na resposta, seja direto e responda no máximo 500 caracteres.
+        - Responda em markdown.
+        - Não precisa fazer nenhuma saudação ou despedida, apenas responda o que o usuário está querendo.
+        - 
+
+        ## Exemplo de resposta
+        pergunta do usuário: "Quais são os melhores agentes do patch atual?"
+        resposta: "Os melhores agentes do patch atual são: \n\n **Agentes:**\n\n coloque os agentes aqui. \n\n**Armas:**\n\n exemplo de armas\n\n
+    `
+
+    let pergunta = '';
+    // Checa qual jogo foi selecionado e define o prompt adequado
+    if (game == 'lol') {
+        pergunta = perguntaLOL;
+    } else if (game == 'valorant') {
+        pergunta = perguntaValorant;
+    } else if (game == 'cs2') {
+        pergunta = perguntaCS2;
+    }
+
     const contents = [{
         role: "user",
         parts: [{
