@@ -10,8 +10,7 @@ Para a obteção da API Key, deve-se acessar o site da API do Gemini e criar a s
 # Jogos que o assistente engloba
 
 - League of Legends
-- Valorant
-- CS2
+- Valorant (em andamento)
 
 Futuras atualizações virão para trazer suporte aos demais jogos, inserindo também jogos fora do escopo competitivo.
 
