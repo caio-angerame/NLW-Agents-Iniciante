@@ -66,17 +66,17 @@ const perguntarIA = async (question, game, apiKey) => {
         - Evite enrolação e fale como se estivesse treinando alguém para subir de elo.
 
         ## Exemplo de resposta
-        pergunta do usuário: "Quais são os melhores agentes do patch atual?"
+        exemplo de pergunta do usuário: "Quais são os melhores agentes do patch atual?"
         resposta: "Os melhores agentes do patch atual são: \n\n **Agentes:**\n\n coloque os agentes aqui. \n\n**Armas:**\n\n exemplo de armas\n\n
 
-        pergunta do usupário: "Como jogar de (agente) na/no (mapa)?"
+        exemplo de pergunta do usuário: "Como jogar de (agente) no(a) (mapa)?"
         resposta esperada:
         - Um resumo do papel do Omen no mapa.
         - Dicas de smokes padrão, TP para enganar e como ganhar espaço dentro do bomb site.
         - O que muitos fazem de errado (ex: usar o TP ofensivo sem informação).
         - Comparação com outros agentes de controle no mesmo mapa.
 
-        perguinta do usuário: "Qual o melhor duelista no patch atual para (mapa X)?"
+        exemplo de pergunta do usuário: "Qual o melhor duelista no patch atual para (mapa X)?"
         resposta esperada:
         - Mencionar o melhor duelista com base no patch e composição comum.
         - Explicar por que ele é bom naquele mapa (rotas, espaços curtos, flancos).
